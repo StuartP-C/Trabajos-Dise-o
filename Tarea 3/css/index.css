@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.seccion2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.seccion2 video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.seccion {
+    background-image: url("../img/banner.jpg");
+    background-color: #ffffff76; 
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 1000px rgba(23, 23, 23, 0.662);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.seccion h1 {
+    padding-top: 260px;
+    font-size: 95px;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.seccion h3 {
+    font-size: 35px;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-weight: normal;
+}
+
+.seccion1 {
+    background-color: #000000;
+    height: auto;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.seccion1 h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 45px;
+    text-shadow: 1px 1px 1px rgb(142, 142, 141);
+}
+
+.seccion1 h3 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 28px;
+    text-shadow: 1px 1px 1px rgb(93, 76, 76);
+}
+
+header {
+    background-color: #000000;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-item a {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none; 
+    color: #fff;
+    transition: all 0.5s ease-out;
+}
+
+.nav-item a:hover {
+    background-color: #ffffff94;
+    color: #000;
+}
+
+.seccion-mapa {
+    text-align: center;
+    background-color: #000;
+    padding: 0;
+}
+
+.titulo-mapa {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgb(63, 60, 60);
+    margin-bottom: 10px;
+}
+
+.mapa-ubicacion iframe {
+    width: 100%;    
+    height: 400px;
+    border: 0;
+}
+
+#agendar {
+    background-color: #f8f9fa;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+}
+
+#agendar h2 {
+    font-size: 40px;;
+    font-weight: bold;
+    color: #000;
+    text-shadow: 1px 1px 1px rgb(63, 60, 60);
+    margin-bottom: 30px;
+}
+
+#contacto {
+    background-color: #000;
+    background-size: cover;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.h2contacto {
+    color: #fff !important;
+    font-size: 40px;
+}
+
+#contacto .fab {
+    transition: transform 0.2s;
+}
+
+#contacto .fab:hover {
+    transform: scale(1.1);
+}
+
+.animacion1{
+    width: 250px;
+    height: 250px;
+}
+
+.logoWhatsApp {
+    padding-top: 75px;
+}
+
+.botonScrollTop {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background-color: #8b8c8ecf;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    color: #000;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px #000;
+}
+
+.btn-explorar {
+    margin-top: 50px;
+    background-color: #8b8c8ecf;
+    border: inset #000000 3px; 
+    color: #000; 
+    width: 300px;
+    height: 80px; 
+    font-size: 30px; 
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+}
+
+.btn-explorar {
+    margin-top: 50px;
+    background-color: #8b8c8ecf;
+    border: inset #000000 3px; 
+    color: #000; 
+    width: 150px;
+    height: 60px; 
+    font-size: 20px; 
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+
+footer {
+    background-color: #000;
+    padding: 20px 0; 
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Dispositivos pequeños - 320px to 479px */
+@media (max-width: 480px) {
+    .navbar-brand img {
+        width: 68px;
+    }
+    .nav-item a {
+        font-size: 17px;
+    }
+    .seccion {
+        background-size: auto;
+    }
+    .seccion1 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .seccion h1 {
+        font-size: 55px;
+    }
+    .seccion1 h2 {
+        font-size: 27px;
+    }
+    .seccion1 h2 {
+        color: #fff;
+        font-weight: bold;
+        font-size: 35px;
+        text-shadow: 1px 1px 1px rgb(142, 142, 141);
+    }
+    .seccion1 h3 {
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        text-shadow: 1px 1px 1px rgb(93, 76, 76);
+    }
+    footer p {
+        font-size: 15px;
+    }
+    .titulo-mapa {
+        font-size: 24px;
+    }
+    .mapa-ubicacion iframe {
+        height: 200px; /* Reduce la altura del mapa en dispositivos pequeños */
+    }
+    .seccion2 video {
+        height: 100vh; /* Asegura que el video cubra el 100% de la altura de la pantalla */
+    }
+    .logoWhatsApp {
+        padding-top: 0;
+    }
+    .botonScrollTop {
+        right: 13px;
+    }
+}
+
+/* Dispositivos móviles y tablets en modo horizontal - 481px a 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+    .navbar-brand img {
+        width: 90px;
+    }
+    .nav-item a {
+        font-size: 19px;
+    }
+    .seccion {
+        background-size: auto;
+    }
+    .seccion1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .seccion h1 {
+        font-size: 75px;
+    }
+    .seccion1 h2 {
+        font-size: 30px;
+    }
+    footer p {
+        font-size: 18px;
+    }
+    .titulo-mapa {
+        font-size: 28px;
+    }
+    .mapa-ubicacion iframe {
+        height: 250px;
+    }
+    .seccion2 video {
+        height: 100vh;
+    }
+    .logoWhatsApp {
+        padding-top: 0;
+    }
+    .botonScrollTop {
+        right: 13px;
+    }
+}
+
+/* Tablets - 768px a 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar-brand img {
+        width: 100px;
+    }
+    .nav-item a {
+        font-size: 25px;
+    }
+    .seccion {
+        background-size: auto;
+    }
+    .seccion1 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .seccion h1 {
+        font-size: 85px;
+    }
+    .seccion1 h2 {
+        font-size: 55px;
+    }
+    footer p {
+        font-size: 18px;
+    }
+    .titulo-mapa {
+        font-size: 32px;
+    }
+    .mapa-ubicacion iframe {
+        height: 300px;
+    }
+    .seccion2 video {
+        height: 100vh;
+    }
+    .logoWhatsApp {
+        padding-top: 0;
+    }
+    .botonScrollTop {
+        right: 13px;
+    }
+}
